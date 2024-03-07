@@ -1,0 +1,150 @@
+body {
+    display: grid;
+    place-items: center;
+    margin: 0;
+    height: 100vh;
+    background: url('https://www.pixel4k.com/wp-content/uploads/2023/08/laptop-keyboard-backlight-dark-4k_1692181426.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.box {
+    height: 700px;
+    width: 500px;
+    position: relative;
+    transform-style: preserve-3d;
+    perspective: 1000px;
+}
+.front {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: url('https://c4.wallpaperflare.com/wallpaper/553/119/620/windows-10-windows-10x-windows-11-minimalism-material-minimal-hd-wallpaper-preview.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+    color: rgb(232, 228, 228);
+    border-radius: 10px;
+    backface-visibility: hidden;
+    transform-style: preserve-3d;
+    transition: transform .7s cubic-bezier(.4, .2, .2, 1);
+}
+.back { 
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: url('https://wallpapercave.com/wp/wp9314356.jpg');
+    text-align: center;
+    color: #fcfafa;
+    backface-visibility: hidden;
+    border-radius: 10px;
+    transform-style: preserve-3d;
+    transition: transform .7s cubic-bezier(.4, .2, .2, 1);
+}
+.content {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 100%;
+    perspective: 100px;
+    transform: translateY(-50%) translateZ(60px) scale(.94);
+}
+.back {
+    transform: rotateY(180deg);
+}
+.front p {
+    font-size: 28px;
+    margin: 0;
+}
+.front span {
+    font-size: 12px;
+    font-weight: 300;
+}
+.front {
+    transform: rotateY(-180deg);
+}
+.back {
+    transform: rotateY(0deg);
+}
+.front p.bottom::after {
+    content: '';
+    display: block;
+    background: white;
+    left: 0;
+    right: 0;
+    height: 2px;
+    width: 150px;
+    margin-inline: auto;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+.font {
+    transform: rotateY(-180deg);
+}
+.back {
+    transform: rotateY(0deg);
+}
+.back h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+    font-weight: 300;
+}
+.back span {
+    font-weight: 300;
+    font-size: 10px;
+}
+
+.icon {
+    margin: 10px 0;
+}
+.icon i{
+    height: 40px;
+    width: 40px;
+    background: white;
+    color: black;
+    font-size: 20px;
+    border-radius: 50%;
+    line-height: 40px;
+    margin: 0 5px;
+    cursor: pointer;
+}
+.content a {
+    color: rgb(255, 130, 130);
+}
+
+.front {
+    transform: rotateY(0deg);
+}
+.back {
+    transform: rotateY(180deg);
+}
+.box:hover>.front {
+    transform: rotateY(-180deg);
+}
+.box:hover>.back {
+    transform: rotateY(0deg);
+}
+
+.fa-linkedin-in:hover {
+    background-color:rgb(10, 10, 253);
+    color: #ffffff;
+}
+
+.fa-facebook-f:hover {
+    background-color: rgb(47, 47, 173);
+    color: #ffffff;
+}
+
+.fa-instagram:hover {
+    background-color: #e60a3a;
+    color: #ffffff;
+}
+
+.fa-whatsapp:hover {
+    background-color: rgb(28, 247, 28);
+    color: #ffff;
+}
+hr {
+    width: 50%;
+}
